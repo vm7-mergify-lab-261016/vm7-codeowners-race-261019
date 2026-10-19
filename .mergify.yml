@@ -8,3 +8,12 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+  - name: codeowners-policy-ready-race
+    conditions:
+      - title = VM7 CODEOWNERS READY RACE 261019
+      - -draft
+      - author = livastic-vm7-r61donor-261017
+      - base = vm7-codeowners-ready-base-261019
+    actions:
+      merge:
+        method: merge
